@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wolfgang B. | Sales Development Representative | Sagan Candidate Presentation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #101828;
+  --primary-light: #1D2939;
+  --accent: #444CE7;
+  --accent-dim: #3538CD;
+  --warm: #F9FAFB;
+  --warm-dark: #EAECF0;
+  --surface: #ffffff;
+  --surface-alt: #F9FAFB;
+  --border: #E4E7EC;
+  --text: #344054;
+  --text-muted: #667085;
+  --charcoal: #101828;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--warm);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+/* ── Header ── */
+.header {
+  background: var(--primary);
+  border-radius: 16px 16px 0 0;
+  padding: 36px 40px 28px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -40px;
+  width: 200px;
+  height: 200px;
+  background: var(--accent);
+  opacity: 0.06;
+  border-radius: 50%;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.sagan-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+}
+
+.sagan-logo svg { opacity: 0.9; }
+
+.header-badge {
+  background: rgba(68,76,231,0.2);
+  color: #a5b4fc;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.candidate-intro {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.candidate-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #818cf8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  flex-shrink: 0;
+}
+
+.candidate-name {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.candidate-title {
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+  font-weight: 500;
+}
+
+.header-meta {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+}
+
+.meta-item svg { opacity: 0.5; flex-shrink: 0; }
+.meta-value { color: white; font-weight: 600; }
+
+/* ── Main Card Body ── */
+.card-body {
+  background: var(--surface);
+  border-radius: 0 0 16px 16px;
+  border: 1px solid var(--border);
+  border-top: none;
+}
+
+.section {
+  padding: 28px 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section:last-child { border-bottom: none; }
+
+.section-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title svg { opacity: 0.4; }
+
+.narrative {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text);
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid var(--accent);
+}
+
+.why-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+.why-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.why-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.fit-card {
+  background: var(--warm);
+  border: 1px solid var(--warm-dark);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.fit-card-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.fit-card-value {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.bars-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 32px;
+}
+
+.bar-item { display: flex; flex-direction: column; gap: 6px; }
+
+.bar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar-label { font-size: 13px; font-weight: 600; color: var(--text); }
+
+.bar-score {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.bar-track {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transition: width 0.6s ease;
+}
+
+.exp-list { display: flex; flex-direction: column; gap: 0; }
+
+.exp-item {
+  display: flex;
+  gap: 16px;
+  padding: 14px 0;
+}
+
+.exp-item:not(:last-child) { border-bottom: 1px solid #f3f4f6; }
+
+.exp-dot-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.exp-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--primary);
+  flex-shrink: 0;
+}
+
+.exp-role { font-size: 14px; font-weight: 700; color: var(--text); }
+.exp-company { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+.exp-desc { font-size: 13px; color: #6b7280; margin-top: 4px; line-height: 1.5; }
+
+.tools-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tool-tag {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.tool-tag.highlight {
+  background: rgba(68,76,231,0.06);
+  border-color: rgba(68,76,231,0.3);
+  color: var(--accent);
+}
+
+.certs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cert-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(68,76,231,0.06);
+  border: 1px solid rgba(68,76,231,0.25);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.cert-badge svg { flex-shrink: 0; }
+
+.recruiter-note {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+
+.recruiter-note-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.recruiter-note-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+  color: white;
+}
+
+.recruiter-note-name { font-size: 13px; font-weight: 700; }
+.recruiter-note-role { font-size: 11px; color: var(--text-muted); }
+
+.recruiter-note-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.action-row {
+  display: flex;
+  gap: 12px;
+  padding: 24px 40px;
+  border-top: 1px solid var(--border);
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.action-btn.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.action-btn.primary:hover { background: var(--primary-light); }
+
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.footer a { color: var(--accent); text-decoration: none; }
+
+@media (max-width: 640px) {
+  .page-wrapper { padding: 16px 12px; }
+  .header, .section, .action-row { padding-left: 20px; padding-right: 20px; }
+  .fit-grid { grid-template-columns: 1fr; }
+  .bars-grid { grid-template-columns: 1fr; }
+  .candidate-intro { flex-direction: column; text-align: center; }
+  .header-meta { justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+  <!-- ═══ HEADER ═══ -->
+  <div class="header">
+    <div class="header-top">
+      <div class="sagan-logo">
+        <img src="https://careertopia.com/wp-content/uploads/2024/03/CareertopiaAsset-1@2x.png" alt="Careertopia" style="height:26px; filter: brightness(0) invert(1); opacity: 0.85;">
+        <span style="opacity:0.3; margin: 0 4px;">|</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        Sagan
+      </div>
+      <div class="header-badge">White Glove Candidate</div>
+    </div>
+
+    <div class="candidate-intro">
+      <div class="candidate-avatar">WB</div>
+      <div>
+        <div class="candidate-name">Wolfgang B.</div>
+        <div class="candidate-title">Sales Development Representative</div>
+      </div>
+    </div>
+
+    <div class="header-meta">
+      <div class="meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span class="meta-value">Nicaragua</span>
+      </div>
+      <div class="meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        <span class="meta-value">6+ Years B2B / SaaS / UCaaS</span>
+      </div>
+      <div class="meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span class="meta-value">UTC-6 &middot; Full ET Overlap</span>
+      </div>
+      <div class="meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg>
+        <span class="meta-value">C2 English (TOEFL) &middot; Native Spanish</span>
+      </div>
+      <div class="meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        <span class="meta-value">Available Immediately</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ CARD BODY ═══ -->
+  <div class="card-body">
+
+    <!-- Recruiter's Take -->
+    <div class="section">
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        Recruiter's Take
+      </div>
+      <div class="narrative">
+        Wolfgang is not a junior bet. Six-plus years of B2B sales across SaaS and UCaaS, with a real promotion arc &mdash; SDR at Vonage to <strong>Senior Account Executive at Vonage</strong>, where he ran the full cycle from discovery to close at a <strong>68% close rate against a 55% target</strong> and drove 30%+ revenue growth on his book. As an SDR at Vonage prior, he was hitting <strong>60% conversion against a 45% target</strong>. Earlier at Accedo Technologies, he ranked in the <strong>top 3% of 150 sales agents</strong>. Currently in seat as an SDR at uSource (remote Houston), where he has driven a <strong>25% lift in qualified leads</strong> through personalized outreach and refined outbound sequencing. The CRM stack is the modern outbound toolkit: <strong>Salesforce, HubSpot, Salesloft, CLOSE</strong>. He holds a <strong>C2 English TOEFL certification</strong> and is a native Spanish speaker, so he covers both U.S. and LATAM-side conversations natively. Nicaragua-based at UTC-6 means full overlap with the U.S. Eastern workday.
+      </div>
+    </div>
+
+    <!-- Why This Candidate -->
+    <div class="section">
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        Why Wolfgang
+      </div>
+      <ul class="why-list">
+        <li class="why-item">
+          <div class="why-dot"></div>
+          <span><strong>Senior AE-level cycle experience.</strong> Owned the full sales cycle at Vonage from discovery to close. Hit 68% close rate vs. a 55% target. Drove 30%+ revenue growth on his book. Most SDR candidates have never seen the back end of a deal &mdash; he has closed them.</span>
+        </li>
+        <li class="why-item">
+          <div class="why-dot"></div>
+          <span><strong>SDR numbers that beat target by 15+ points.</strong> 60% SDR conversion against a 45% target at Vonage. 25% lift in qualified leads in his current uSource seat. Top 3% of 150 reps at Accedo Technologies.</span>
+        </li>
+        <li class="why-item">
+          <div class="why-dot"></div>
+          <span><strong>Modern outbound CRM stack.</strong> Salesforce, HubSpot, Salesloft, and CLOSE all in production use. Cold calling, email cadences, and social outreach &mdash; he has run all three channels in revenue-bearing roles.</span>
+        </li>
+        <li class="why-item">
+          <div class="why-dot"></div>
+          <span><strong>SaaS / UCaaS-fluent.</strong> Vonage is a major UCaaS player. He sold communications-platform deals at the Senior AE level &mdash; he understands the cycle, the ICP, the objection patterns, and the demo flow.</span>
+        </li>
+        <li class="why-item">
+          <div class="why-dot"></div>
+          <span><strong>Bilingual reach.</strong> C2 English TOEFL certification plus native Spanish. Covers U.S. accounts cleanly and unlocks LATAM-founded or LATAM-operated targets if Careertopia ever expands the ICP.</span>
+        </li>
+        <li class="why-item">
+          <div class="why-dot"></div>
+          <span><strong>Time-zone fit.</strong> Nicaragua at UTC-6 means full ET workday overlap, no graveyard shifts, sustainable long-term.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Fit Indicators -->
+    <div class="section">
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Fit Indicators
+      </div>
+      <div class="fit-grid">
+        <div class="fit-card">
+          <div class="fit-card-label">Quota-Crushing Track Record</div>
+          <div class="fit-card-value">68% close rate vs. 55% target as Senior AE. 60% SDR conversion vs. 45% target. Top 3% of 150 reps at Accedo. He hits numbers.</div>
+        </div>
+        <div class="fit-card">
+          <div class="fit-card-label">SaaS / UCaaS Native</div>
+          <div class="fit-card-value">Vonage Senior AE. Knows the discovery, demo, objection-handling, and close motion for B2B communications software.</div>
+        </div>
+        <div class="fit-card">
+          <div class="fit-card-label">Bilingual EN / ES</div>
+          <div class="fit-card-value">C2 English certified, native Spanish. Adds reach into Hispanic-led U.S. accounts and LATAM ICPs without a language tax.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Strength Bars -->
+    <div class="section">
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        Strength Profile
+      </div>
+      <div class="bars-grid">
+        <div class="bar-item">
+          <div class="bar-top"><span class="bar-label">B2B Outbound Prospecting</span><span class="bar-score">94</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:94%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-top"><span class="bar-label">SaaS / UCaaS Sales Fluency</span><span class="bar-score">90</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-top"><span class="bar-label">CRM Stack (Salesforce / HubSpot / Salesloft)</span><span class="bar-score">88</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-top"><span class="bar-label">Lead Qualification &amp; Account Mapping</span><span class="bar-score">90</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-top"><span class="bar-label">Discovery &rarr; Close (Senior AE)</span><span class="bar-score">85</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-top"><span class="bar-label">Bilingual Outreach (EN / ES)</span><span class="bar-score">96</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:96%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        Experience Highlights
+      </div>
+      <div class="exp-list">
+        <div class="exp-item">
+          <div class="exp-dot-col"><div class="exp-dot"></div></div>
+          <div>
+            <div class="exp-role">Sales Development Representative</div>
+            <div class="exp-company">uSource &middot; Remote (Houston, TX) &middot; Feb 2025 &ndash; Present</div>
+            <div class="exp-desc">Drives a 25% lift in qualified leads through personalized outreach and refined outbound sequencing. Identifies and researches new opportunities across social media, email, and industry channels. Qualifies leads and books high-quality meetings for AEs in the facility-maintenance solutions space. Collaborates with sales leadership to optimize engagement and conversion.</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-dot-col"><div class="exp-dot"></div></div>
+          <div>
+            <div class="exp-role">Sales Development Representative</div>
+            <div class="exp-company">Clean All Services, Inc. &middot; Remote (Ohio, USA) &middot; May 2024 &ndash; Feb 2025</div>
+            <div class="exp-desc">Generated pipeline through outbound prospecting across multiple channels. Engaged decision-makers within target organizations, qualified leads, and scheduled meetings for AEs. Built relationships with key influencers and partnered with sales leadership to drive revenue.</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-dot-col"><div class="exp-dot"></div></div>
+          <div>
+            <div class="exp-role">Senior Account Executive</div>
+            <div class="exp-company">Vonage &middot; Remote (New Jersey, USA) &middot; May 2023 &ndash; May 2024</div>
+            <div class="exp-desc">Owned the full sales cycle from discovery to close on UCaaS deals. Achieved a <strong>68% close rate against a 55% target</strong> and drove 30%+ revenue growth on assigned pipeline. Delivered tailored SaaS and communications solutions to mid-market accounts.</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-dot-col"><div class="exp-dot"></div></div>
+          <div>
+            <div class="exp-role">Sales Development Representative</div>
+            <div class="exp-company">Vonage &middot; Remote (New Jersey, USA) &middot; Dec 2022 &ndash; May 2023</div>
+            <div class="exp-desc">Generated leads through cold calling, email, and inbound channels. <strong>60% conversion rate against a 45% target.</strong> Qualified prospects, ensured solution fit, and supported clean handoff to AEs.</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-dot-col"><div class="exp-dot"></div></div>
+          <div>
+            <div class="exp-role">Sales Development Representative</div>
+            <div class="exp-company">HomeAdvisor &middot; Remote (Denver, USA) &middot; Feb 2021 &ndash; Dec 2022</div>
+            <div class="exp-desc">High-volume outbound prospecting to homeowners. Mapped target accounts, qualified leads on need / budget / readiness, and handled objections at the doorstep of the buying decision. Consistently met or exceeded activity and revenue targets.</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-dot-col"><div class="exp-dot"></div></div>
+          <div>
+            <div class="exp-role">Sales Development Representative</div>
+            <div class="exp-company">Accedo Technologies &middot; Managua, Nicaragua &middot; Jan 2020 &ndash; Feb 2021</div>
+            <div class="exp-desc"><strong>Top 3% of 150 sales agents</strong> on overall performance. Prospected and qualified leads in the health-insurance sector through cold outreach and inbound channels. Delivered tailored solutions to address objections and drive conversions.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="section">
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        Platforms &amp; Tools
+      </div>
+      <div class="tools-cluster">
+        <span class="tool-tag highlight">Salesforce</span>
+        <span class="tool-tag highlight">HubSpot</span>
+        <span class="tool-tag highlight">Salesloft</span>
+        <span class="tool-tag highlight">CLOSE</span>
+        <span class="tool-tag highlight">Cold Calling</span>
+        <span class="tool-tag highlight">Email Cadences</span>
+        <span class="tool-tag">Social Outreach</span>
+        <span class="tool-tag">Lead Qualification</span>
+        <span class="tool-tag">Account Mapping</span>
+        <span class="tool-tag">Sales Forecasting</span>
+        <span class="tool-tag">Demo &amp; Presentation Tools</span>
+        <span class="tool-tag">Market Research</span>
+      </div>
+    </div>
+
+    <!-- Education & Certifications -->
+    <div class="section">
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        Education &amp; Certifications
+      </div>
+      <div class="certs-list">
+        <div class="cert-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          C2 English Certification (TOEFL) &middot; Keiser University
+        </div>
+        <div class="cert-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          B.S. Industrial &amp; Product Design &middot; Universidad Politécnica de Nicaragua
+        </div>
+      </div>
+    </div>
+
+    <!-- Recruiter Note -->
+    <div class="section">
+      <div class="recruiter-note">
+        <div class="recruiter-note-header">
+          <div class="recruiter-note-avatar">JP</div>
+          <div>
+            <div class="recruiter-note-name">Jesus Pacheco</div>
+            <div class="recruiter-note-role">Head of Revenue, Sagan</div>
+          </div>
+        </div>
+        <div class="recruiter-note-text">
+          Wolfgang is the senior end of the SDR talent pool. Most candidates we present at this level have 1-3 years of pipeline work and have never closed a deal. Wolfgang has six-plus years and was promoted to Senior AE at Vonage, where he ran the full cycle and beat his close-rate target by 13 points. As an SDR he beat his conversion target by 15 points. Top 3% at Accedo. He runs the modern stack &mdash; Salesforce, HubSpot, Salesloft, CLOSE &mdash; and his English is C2 TOEFL-certified, with native Spanish for any LATAM-side reach. The honest read: this is not someone you put on a "make 200 dials a day" plan. Wolfgang is most valuable when the role gives him room to take a discovery deeper than the average SDR, qualify with judgment, and pass cleanly into the AE motion he already knows. If Careertopia wants a senior-feeling SDR who could grow into AE responsibility within 6-12 months, this is the profile. Nicaragua time zone gives full ET overlap and the rate is well below a comparable U.S. profile.
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-row">
+      <a href="./intro.mp4" target="_blank" class="action-btn primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Watch Intro Video
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    Prepared by <strong>Jesus Pacheco</strong> &middot; Head of Revenue, Sagan &middot; May 6, 2026<br>
+    <a href="https://getsagan.com">getsagan.com</a> &middot; jesus.p@getsagan.com
+  </div>
+
+</div>
+
+</body>
+</html>
